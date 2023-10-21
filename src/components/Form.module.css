@@ -1,0 +1,19 @@
+.centered-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh; /* Center vertically within the viewport */
+  }
+
+.text-left{
+    text-align: left;
+    /* /* font-size: large; */
+
+} 
+
+img{
+    height : 50px;
+}
+h1{
+    color : rgb(1,162,212)
+}
