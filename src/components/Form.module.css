@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    height: 100vh; /* Center vertically within the viewport */
+    height: 140vh; /* Center vertically within the viewport */
   }
 
 .text-left{
@@ -23,7 +23,11 @@ h3{
     margin : 0px;
 }
 
-
+.thank-you-message{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
 /* raj */
 
 
@@ -86,3 +90,5 @@ li{
         color: black;
         margin: 0px;
     } */
+
+    

@@ -10,6 +10,9 @@ function Form() {
   const[email , setEmail] = useState('');
   const[phone, setPhone] = useState('');
   const[profession , setProfession] = useState('');
+  const [showThankYouMessage, setShowThankYouMessage] = useState(false);
+
+  
 
 
 
@@ -30,6 +33,8 @@ function Form() {
         setEmail('');
         setPhone('');
         setProfession('');
+        setShowThankYouMessage(true);
+        window.alert('Thank you for registering!');
         
       })
     }
@@ -99,13 +104,19 @@ function Form() {
               <div style={{ display: "flex", }}>
                 <button type='submit' className='btn btn-primary'>Save My Seat</button>
               </div>
+              <div>
+                {showThankYouMessage ? (
+                  <div className={styles['thank-you-message']}>
+                    Thank you for registering!
+                  </div>
+                ) : null}
+              </div>
             </form>
           </div>
         </div>
   
-      <br></br>
-      <br></br>
-        <div style = {{marginTop : "70px"}}>
+  
+        <div style = {{marginTop : "0px"}}>
         {/* <div style = {{marginTop : "220px"}}> */}
             <h2  className = {styles['h2-style']}> Meet Your Host</h2>
             <img className = {styles['founder-image']}src={hero} alt="Founder Image"/>
