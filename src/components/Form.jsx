@@ -68,18 +68,6 @@ function Form() {
               />
   
               <br></br>
-
-              <label>Your Profession</label>
-              <input
-                type='text'
-                className='form-control'
-                required
-                placeholder='Your Profession'
-                onChange={(e) => setProfession(e.target.value)}
-                value={profession}
-              />
-  
-              <br></br>
               <label>Your email</label>
               <input
                 type='email'
@@ -101,6 +89,16 @@ function Form() {
                 pattern="[0-9]{10}"
               />
               <br></br>
+                <label>Your Profession</label>
+                <input
+                  type='text'
+                  className='form-control'
+                  required
+                  placeholder='Your Profession'
+                  onChange={(e) => setProfession(e.target.value)}
+                  value={profession}
+                />
+              <br></br>
               <div style={{ display: "flex", }}>
                 <button type='submit' className='btn btn-primary'>Save My Seat</button>
               </div>
@@ -115,16 +113,16 @@ function Form() {
           </div>
         </div>
   
-  
-        <div style = {{marginTop : "0px"}}>
+        <div className={styles['content-below-form']}>
+        {/* <div style = {{marginTop : "0px"}}> */}
         {/* <div style = {{marginTop : "220px"}}> */}
             <h2  className = {styles['h2-style']}> Meet Your Host</h2>
             <img className = {styles['founder-image']}src={hero} alt="Founder Image"/>
-            <p style={{ fontSize: "20px" }}>Prakash Maharaj</p>
+            <p style={{ fontSize: "20px" , color : "rgb(1,162,212)" , marginBottom : "5px" , marginTop : "5px" , fontWeight : "bold"}}>Prakash Maharaj</p>
             {/* <h5>Prakash Maharaj</h5> */}
 
-            <h6>Founder & CEO,Blooprint Consulting</h6>
-            <h6>Ex-Flipkart | Ecommerce Exp-13 years</h6>
+            <h6 style = {{fontSize : "12px" , marginBottom : "1px"}}>Founder & CEO,Blooprint Consulting</h6>
+            <h6 style = {{fontSize : "12px"}}>Ex-Flipkart | Ecommerce Exp-13 years</h6>
 
             <h2 className = {styles['h2-style']}>About Blooprint Consulting </h2>
             {/* <h3>Founded by former Flipkart and Amazon employees in 2021 with a passion for helping businesses succeed in the online marketplace. Our total experience of over 30 years of working with a variety of e-commerce platforms and in various portfolios such as Operation, Category Management, Customer Shopping Experience, Planning, Merchandising, and Brand Management, has strengthened our knowledge and skills to help brands achieve their business goals.</h3> */}
