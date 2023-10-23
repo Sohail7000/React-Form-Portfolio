@@ -51,7 +51,7 @@ function Form() {
             </h1>
             <h6>By Ex Flipkart & Amazon Professional</h6>
             <br/>
-            <h5> 🗓️ 27th & 28th October, 2023, 5 PM IST</h5>
+            <h5> 🗓️ 28th October, 2023, 5 PM IST</h5>
   
             <br></br>
             <h1 style={{ color: "rgb(1,162,212)" , fontWeight : "bold" , margin : "0px" }}>Register Now</h1>
@@ -127,7 +127,7 @@ function Form() {
             <h2 className = {styles['h2-style']}>About Blooprint Consulting </h2>
             {/* <h3>Founded by former Flipkart and Amazon employees in 2021 with a passion for helping businesses succeed in the online marketplace. Our total experience of over 30 years of working with a variety of e-commerce platforms and in various portfolios such as Operation, Category Management, Customer Shopping Experience, Planning, Merchandising, and Brand Management, has strengthened our knowledge and skills to help brands achieve their business goals.</h3> */}
             <p style={{ fontSize: "15px" }}>Founded by former Flipkart and Amazon employees in 2021 with a passion for helping businesses succeed in the online marketplace. Our total experience of over 30 years of working with a variety of e-commerce platforms and in various portfolios such as Operation, Category Management, Customer Shopping Experience, Planning, Merchandising, and Brand Management, has strengthened our knowledge and skills to help brands achieve their business goals.</p>
-            <h2 className = {styles['h2-style']}>Who Is This For </h2>
+            <h2 className = {styles['h2-style']}>Who Is This For? </h2>
 
             <ul>
               <li>Aspiring E-commerce Professionals</li>
@@ -139,7 +139,7 @@ function Form() {
             </ul>
             
 
-            <h2 className = {styles['h2-style']}>What We'll Cover </h2>
+            <h2 className = {styles['h2-style']}>What We'll Cover! </h2>
             <ul>
               <li>E-commerce Growth in India</li>
               <li>Opportunities In E-Commerce</li>
