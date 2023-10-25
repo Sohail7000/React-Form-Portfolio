@@ -4,13 +4,14 @@ import { useState } from 'react';
 import bpa_img from '../assets/BPA.png';
 import hero from '../assets/founder.png'
 import axios from 'axios'
-
+import { ClipLoader } from 'react-spinners';
 function Form() {
   const[name , setName] = useState('');
   const[email , setEmail] = useState('');
   const[phone, setPhone] = useState('');
   const[profession , setProfession] = useState('');
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
+  const [showLoader, setShowLoader] = useState(false);
 
   
 
@@ -22,12 +23,17 @@ function Form() {
     e.preventDefault();
     // console.log(name, age, designation, salary);
 
+    // Show loader
+    setShowLoader(true);
+
     // our object to pass
     const data = {
       Name:name, Email: email, Phone: phone, Profession : profession
       
     }
     axios.post('https://sheet.best/api/sheets/dd6ba2b3-0f44-417d-ae22-c25dd7dd6c9e',data).then(response=>{
+        // Hide loader
+        setShowLoader(false);
         console.log(response);
         setName('');
         setEmail('');
@@ -38,6 +44,11 @@ function Form() {
         
       })
     }
+
+     // CSS for the loading ellipsis animation
+    const buttonStyles = {
+      animation: 'loadingEllipsis 1s infinite',
+    };
 
     return (
       <>
@@ -99,9 +110,15 @@ function Form() {
                   value={profession}
                 />
               <br></br>
-              <div style={{ display: "flex", }}>
-                <button type='submit' className='btn btn-primary'>Save My Seat</button>
-              </div>
+             <div style={{ display: "flex" }}>
+                {showLoader ? (
+                  <ClipLoader color={'#123abc'} loading={true} size={20} />
+                ) : (
+                  <button type='submit' className={`btn btn-primary ${showLoader ? 'submitting' : ''}`}>
+                    Save My Seat
+                  </button>
+                )}
+            </div>
               <div>
                 {showThankYouMessage ? (
                   <div className={styles['thank-you-message']}>
