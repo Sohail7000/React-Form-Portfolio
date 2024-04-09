@@ -13,10 +13,6 @@
 //   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
 //   const [showLoader, setShowLoader] = useState(false);
 
-  
-
-
-
 //   // submit event
 
 //   const handleSubmit=(e)=>{
@@ -29,7 +25,7 @@
 //     // our object to pass
 //     const data = {
 //       Name:name, Email: email, Phone: phone, Profession : profession
-      
+
 //     }
 //     axios.post('https://sheet.best/api/sheets/dd6ba2b3-0f44-417d-ae22-c25dd7dd6c9e',data).then(response=>{
 //         // Hide loader
@@ -41,7 +37,7 @@
 //         setProfession('');
 //         setShowThankYouMessage(true);
 //         window.alert('Thank you for registering!');
-        
+
 //       })
 //     }
 
@@ -63,7 +59,7 @@
 //             <h6>By Ex Flipkart & Amazon Professional</h6>
 //             <br/>
 //             <h5> 🗓️ 28th October, 2023, 5 PM IST</h5>
-  
+
 //             <br></br>
 //             <h1 style={{ color: "rgb(1,162,212)" , fontWeight : "bold" , margin : "0px" }}>Register Now</h1>
 //             <br></br>
@@ -77,7 +73,7 @@
 //                 onChange={(e) => setName(e.target.value)}
 //                 value={name}
 //               />
-  
+
 //               <br></br>
 //               <label>Your email</label>
 //               <input
@@ -129,7 +125,7 @@
 //             </form>
 //           </div>
 //         </div>
-  
+
 //         <div className={styles['content-below-form']}>
 //         {/* <div style = {{marginTop : "0px"}}> */}
 //         {/* <div style = {{marginTop : "220px"}}> */}
@@ -138,10 +134,10 @@
 //             <p style={{ fontSize: "20px" , color : "rgb(1,162,212)" , marginBottom : "5px" , marginTop : "5px" , fontWeight : "bold"}}>Prakash Maharaj</p>
 //             {/* <h5>Prakash Maharaj</h5> */}
 
-//             <h6 style = {{fontSize : "12px" , marginBottom : "1px"}}>Founder & CEO,Blooprint Consulting</h6>
+//             <h6 style = {{fontSize : "12px" , marginBottom : "1px"}}>Founder & CEO,nasa Consulting</h6>
 //             <h6 style = {{fontSize : "12px"}}>Ex-Flipkart | Ecommerce Exp-13 years</h6>
 
-//             <h2 className = {styles['h2-style']}>About Blooprint Consulting </h2>
+//             <h2 className = {styles['h2-style']}>About nasa Consulting </h2>
 //             {/* <h3>Founded by former Flipkart and Amazon employees in 2021 with a passion for helping businesses succeed in the online marketplace. Our total experience of over 30 years of working with a variety of e-commerce platforms and in various portfolios such as Operation, Category Management, Customer Shopping Experience, Planning, Merchandising, and Brand Management, has strengthened our knowledge and skills to help brands achieve their business goals.</h3> */}
 //             <p style={{ fontSize: "15px" }}>Founded by former Flipkart and Amazon employees in 2021 with a passion for helping businesses succeed in the online marketplace. Our total experience of over 30 years of working with a variety of e-commerce platforms and in various portfolios such as Operation, Category Management, Customer Shopping Experience, Planning, Merchandising, and Brand Management, has strengthened our knowledge and skills to help brands achieve their business goals.</p>
 //             <h2 className = {styles['h2-style']}>Who Is This For? </h2>
@@ -154,7 +150,6 @@
 //               <li>Freelancers seeking e-commerce projects</li>
 //               <li>Individuals looking to restart carrier</li>
 //             </ul>
-            
 
 //             <h2 className = {styles['h2-style']}>What We'll Cover! </h2>
 //             <ul>
@@ -166,10 +161,8 @@
 //               <li>International Opportunities in E-commerce</li>
 //             </ul>
 
-
 //         </div>
-     
-     
+
 //     </>
 //   );
 // }
@@ -385,4 +378,3 @@ function Form() {
 }
 
 export default Form;
-
