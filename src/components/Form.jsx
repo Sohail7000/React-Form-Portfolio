@@ -178,6 +178,7 @@
 
 import React from 'react';
 import styles from './Form.module.css';
+import nasa_logo from '../assets/NASA.jpg';
 import { useState } from 'react';
 import axios from 'axios';
 import { ClipLoader } from 'react-spinners';
@@ -227,7 +228,7 @@ function Form() {
           <img
             className="logo"
             style={{ height: '110px' }}
-            src="https://example.com/logo.png"
+            src={nasa_logo}
             alt="NASA Logo"
           />
           <h6>Join our Exciting Journey into the Cosmos!</h6>
@@ -330,7 +331,7 @@ function Form() {
         <h2 className={styles['h2-style']}> Meet Our Space Experts</h2>
         <img
           className={styles['founder-image']}
-          src="https://example.com/expert.png"
+          src={nasa_logo}
           alt="Space Expert"
         />
         <p
